@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
     <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin-left: 100px;
+        margin-top: 50px;
+      }
       div {
         display: flex;
         column-gap: 10px;
+        margin: auto;
+      }
+      ::placeholder {
+        color: green;
+        font-size: 20px;
+      }
+      input {
+        padding: 10px;
+      }
+      .add {
+        height: 40px;
+        width: 50px;
       }
     </style>
   </head>
   <body>
     <div>
       <input id="usrInp" placeholder="Enter your task" />
-      <button type="submit" onclick="todoBtn()">Add</button>
+      <button class="add" type="submit" onclick="todoBtn()">Add</button>
     </div>
     <script src="./scripts/script.js"></script>
   </body>
